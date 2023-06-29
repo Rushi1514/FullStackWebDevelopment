@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fourth Task</title>
+</head>
+<body>
+  <h1>Functions</h1>
+  <button onclick="getArrElements()">Click</button><label> to See the Maximum and Minimum Salary from Array</label>
+  <p id="MaxMinSal"></p>
+  <script>
+    let arr = [],MaxSal=0,MinSal=0;
+    for(let i=0;i<5;i++){
+        arr.push(prompt("Enter Salaries : "));
+    }
+    MaxSal = Math.max.apply(null,arr);
+    MinSal = Math.min.apply(null,arr);
+    function getArrElements(){
+        document.getElementById("MaxMinSal").innerHTML = "Maximum Salary = " + MaxSal + "<br>" + "Minimum Salary = " + MinSal;
+    }
+  </script>
+</body>
