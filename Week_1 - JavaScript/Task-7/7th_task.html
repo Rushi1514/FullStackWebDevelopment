@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seventh Task</title>
+  </head>
+<body>
+    <h1>DOM Manipulation</h1>
+    <button id="myButton">Please Click Me</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var button = document.getElementById('myButton');
+            button.addEventListener('click', function() {
+                button.textContent = 'Thank You So Much';
+            });
+        });
+    </script>
+</body>
+</html>

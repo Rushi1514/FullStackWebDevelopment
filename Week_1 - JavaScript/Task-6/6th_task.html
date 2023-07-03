@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sixth Task</title>
+</head>
+<body>
+  <h1>Scope and Hoisting</h1>
+  <button onclick="Scopefun()">Click</button>
+  <label> to see the variables inside and outside function</label>
+  <p id="scope"></p>
+  <script>
+    function Scopefun() {
+        var x = "var";
+        let y = "let";
+        const z = "const";
+        console.log(x + "_inside");
+        console.log(y + "_inside");
+        console.log(z + "_inside");
+    }
+    document.getElementById("scope").innerHTML = x + "_outside";
+    document.getElementById("scope").innerHTML = y + "_outside";
+    document.getElementById("scope").innerHTML = z + "_outside";
+</script>
+</body>
+</html>
